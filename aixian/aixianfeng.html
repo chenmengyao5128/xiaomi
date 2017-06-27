@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="axf" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Title</title>
+    <link rel="stylesheet" href="css/aixianfeng.css">
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/swiper.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/angular-css.min.js"></script>
+    <script src="aixianfeng.js"></script>
+    <script src="component/home/home.js"></script>
+    <script src="component/supermarket/supermarket.js"></script>
+    <script src="component/shopping/shopping.js"></script>
+    <script src="component/mine/mine.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <div class="site" >
+        <p>驼房营路附近</p>
+        <div class="site1">
+            <p><i class="iconfont icon-fangdajing"></i></p>
+            <p>搜索</p>
+        </div>
+    </div>
+    <div class="contener" ng-view>
+
+    </div>
+    <ul class="tab" ng-controller="axfC">
+        <li ng-class="{true:'selected',false:'unselected'}[isSelected1]" ng-click="isSele1()">
+            <a href="#/home" >
+                <p><i class="iconfont icon-jia"></i></p>
+                <p>首页</p>
+            </a>
+        </li>
+        <li ng-class="{true:'selected',false:'unselected'}[isSelected2]" ng-click="isSele2()">
+            <a href="#/supermarket">
+                <p><i class="iconfont icon-shandian"></i></p>
+                <p>闪电超市</p>
+            </a>
+        </li>
+        <li ng-class="{true:'selected',false:'unselected'}[isSelected3]" ng-click="isSele3()">
+            <a href="#/cart">
+                <p><i class="iconfont icon-gouwuche"></i></p>
+                <p>购物车</p>
+            </a>
+        </li>
+        <li ng-class="{true:'selected',false:'unselected'}[isSelected4]" ng-click="isSele4()">
+            <a href="#/mine">
+                <p><i class="iconfont icon-my"></i></p>
+                <p>我的</p>
+            </a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

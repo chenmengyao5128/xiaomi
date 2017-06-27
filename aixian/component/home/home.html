@@ -1,0 +1,43 @@
+<div class="head">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"  ng-repeat="item in swiperData"><img src="{{item.activity.img}}"></div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <ul class="choice">
+        <li ng-repeat="item1 in swiperData1"><p><img src="{{item1.activity.img}}"/></p><p>{{item1.activity.name}}</p></li>
+    </ul>
+
+    <ul class="brand">
+        <li><img src="{{swiperData3}}" ></li>
+        <li ng-repeat="item2 in swiperData2"><p><img src="{{item2.activity.img}}"/></p></li>
+    </ul>
+    <ul class="dime-store">
+        <li><img src="{{swiperData4[0].act_rows[0].chead_detail.img}}"/></li>
+        <li ><p ng-repeat="item3 in swiperData4[1].act_rows"><img src="{{item3.cactivity_detail.img}}"/></p></li>
+        <li >
+            <div ng-repeat="item4 in swiperData4[2].act_rows">
+                <p><img src="{{item4.cicons_detail.img}}"/></p>
+                <p>{{item4.cicons_detail.name}}</p>
+            </div>
+        </li>
+        <li >
+            <p ng-repeat="item5 in swiperData4[3].act_rows" ><img src="{{item5.activity.img}}"/></p>
+        </li>
+    </ul>
+    <div ng-repeat="item6 in swiperData5" class="speed">
+        <h3 style="color: #{{item6.category_detail.category_color}}">{{item6.category_detail.name}}</h3>
+        <img src="{{item6.activity.img}}"/>
+        <ul class="speed1">
+            <li ng-repeat="item7 in item6.category_detail.goods" >
+                <p><img src="{{item7.img}}"/></p>
+                <p>{{item7.name}}</p>
+                <p>{{item7.specifics}}</p>
+                <p><span>{{item7.price}}</span><span>{{item7.partner_price}}</span></p>
+                <img src="img/list1.png" id="cc"/>
+            </li>
+        </ul>
+    </div>
+</div>

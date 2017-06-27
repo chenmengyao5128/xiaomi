@@ -1,0 +1,38 @@
+<div class="nav">
+    <ul class="navLeft">
+        <li ng-repeat="item in data" ng-click="chang(item.id,item.cids)" >{{item.name}}</li>
+
+    </ul>
+
+    <div class="navright">
+        <div class="exhibition1">
+            <p class="exhibition2" ng-click="toggle()" >全部分类</p>
+            <p class="exhibition3"  ng-click="toggl()" >综合排序</p>
+        </div>
+        <ul class="navright3">
+
+        <li ng-repeat="item1 in right | orderBy:orderStyle ">
+        <div class="navright1"><img src="{{item1.img}}"/></div>
+        <div class="navright2">
+            <p>{{item1.name}}</p>
+            <p>{{item1.specifics}}</p>
+            <p >¥{{item1.price}}</p>
+            <img src="img/list1.png" id="cc"/>
+        </div>
+
+        </li>
+        </ul>
+        <ul class="navright4" ng-show="visible" >
+            <!--item in data-->
+            <li ng-repeat="item2 in left" ng-click="top(item2.id)">{{item2.name}}</li>
+
+        </ul>
+        <ul class="navright5" ng-show="visibl">
+            <li>综合排序</li>
+            <li ng-click="orderStyle = 'product_num * 100'">销量最高</li>
+            <li ng-click="orderStyle = 'price * 100'">价格最低</li>
+            <li ng-click="orderStyle = '-price * 100'">价格最高</li>
+        </ul>
+    </div>
+
+</div>

@@ -1,0 +1,150 @@
+.swiper-slide img{width: 100%;}
+.choice{
+    width: 100%;
+    height: 87px;
+    margin: 10px 0;
+    background:#fff;
+}
+.choice>li{
+    width: 25%;
+    height: 67px;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    text-align: center;
+}
+.choice>li>p>img{
+    width: 100%;
+    height: 61px;
+}
+.choice>li>p {
+    font-size: 14px;
+}
+.brand{
+    width: 100%;
+    height: 290px;
+    box-sizing: border-box;
+}
+.brand>li{
+    height: 290px;
+    width: 50%;
+    float: left;
+    margin: 2px 0;
+    padding-left: 2px;
+
+}
+.brand li:first-child{
+    height: 46px;
+    width: 100%;
+}
+.brand li>img{
+    width: 100%;
+    height: 100%;
+}
+.dime-store,.dime-store>li{
+    width: 100%;
+}
+.dime-store>li>img{
+    width: 100%;
+}
+.dime-store>li:nth-child(2){
+    width: 100%;
+}
+.dime-store>li:nth-child(2) p{
+    float: left;
+    width: 50%;
+    display: flex;
+    height: 75px;
+    justify-content: center;
+}
+.dime-store>li:nth-child(2) p>img{
+    width: 92%;
+}
+.dime-store>li:nth-child(3) div{
+    width: 25%;
+    float: left;
+}
+.dime-store>li:nth-child(3) div>p>img{
+     width: 100%;
+ }
+.dime-store>li:nth-child(3) div>p:nth-child(2) {
+    text-align: center;
+}
+.dime-store>li:nth-child(4)>p{
+    width: 50%;
+}
+.dime-store>li:nth-child(4)>p>img{
+    width: 100%;
+}
+.dime-store>li:nth-child(4)>p{
+    float: left;
+}
+.speed{
+    width: 100%;
+
+}
+.speed h3{
+    width: 100%;
+    height: 52px;
+    line-height: 52px;
+    text-indent: 12px;
+}
+.speed img{
+    width: 100%;
+    height: 100px;
+}
+.speed1{
+    width: 100%;
+    height: 224px;
+}
+.speed1>li{
+    width: 33.3%;
+    height: 100%;
+    float: left;
+    border-right: 1px solid #969696;
+    position: relative;
+}
+.speed1>li>p:nth-child(1){
+    height: 124px;
+    width: 100%;
+}
+.speed1>li>p:nth-child(1) img{
+    height: 100%;
+    width: 100%;
+}
+.speed1>li>p:nth-child(2){
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    font-weight: bold;
+    text-indent: 5px;
+    margin-top: 5px;
+}
+.speed1>li>p:nth-child(3),.speed1>li>p:nth-child(4){
+    text-indent: 5px;
+    font-size: 16px;
+    margin-top: 8px;
+}
+.speed1>li>p:nth-child(4) span:nth-child(1){
+    color: red;
+}
+.speed1>li>p:nth-child(4) span:nth-child(2){
+    color: #cacaca;
+    font-size: 14px;
+    text-decoration: line-through;
+    margin-left: 12px;
+}
+#cc{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 36px;
+    height: 36px;
+}
+.head{
+ width: 100%;
+    height: 100%;
+}
